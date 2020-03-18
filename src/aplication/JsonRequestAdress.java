@@ -12,7 +12,6 @@ public class JsonRequestAdress {
 	public static String request( String uri ) throws Exception {
 
 		
-		//String url = "https://api.codenation.dev/v1/challenge/dev-ps/generate-data?token=3f78fe89cf683b6fcd8670de2261d11db3e869fe";
 		URL url = new URL( uri );
 		HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
 		InputStream in = new BufferedInputStream(urlConnection.getInputStream());
